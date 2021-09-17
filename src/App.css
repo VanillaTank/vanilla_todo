@@ -1,0 +1,12 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #03023C;
+}
+
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+}

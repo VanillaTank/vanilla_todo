@@ -1,0 +1,17 @@
+.my_input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #1CA8F8;
+    padding: 6px;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 50px;
+   
+}
+.my_input::placeholder {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(3, 2, 60, .6);
+}

@@ -1,0 +1,21 @@
+.footer {
+    background-color: #0761B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 10px;    
+
+}
+.footer_text {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.footer_link {
+    text-decoration: none;
+    color: #fff;
+}
