@@ -1,4 +1,5 @@
 import s from './Header.module.css'
+import { Link } from 'react-router-dom'
 const Header = () => {
 
     return(
@@ -10,9 +11,10 @@ const Header = () => {
 
                 <div>
                     <ul className={s.nav_list}>
-                        <li className={s.nav_list__item}><a href="#">АКТУАЛЬНЫЕ</a></li>
-                        <li className={s.nav_list__item}><a href="#">ВЫПОЛНЕННЫЕ</a></li>
-                        <li className={s.nav_list__item}><a href="#">АРХИВ</a></li>
+                        <li className={s.nav_list__item}><Link to="/">АКТУАЛЬНЫЕ</Link></li>
+                        <li className={s.nav_list__item}><Link to="/done">ВЫПОЛНЕННЫЕ</Link></li>
+                        <li className={s.nav_list__item}><Link to="/create-project">Добавить проект</Link></li>
+                        <li className={s.nav_list__item}><Link to="/archieve">АРХИВ</Link></li>
                     </ul>
                     <button className={s.btn}>ВЫЙТИ</button>
                 </div>

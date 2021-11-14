@@ -14,10 +14,10 @@ const CreateProject = () => {
                     <MyInput placeholder='Задача' />
                     <MyInput placeholder='Задача' />
                     <MyInput placeholder='Задача' />
-                    <button>ДОБАВИТЬ ЗАДАЧУ</button>
+                    <button className='btn'>ДОБАВИТЬ ЗАДАЧУ</button>
                 </form>
             </div>
-            <button>СОХРАНИТЬ ПРОЕКТ</button>
+            <button className={s.saveProject_btn + ' btn'}>СОХРАНИТЬ ПРОЕКТ</button>
         </div>
     )
 }
