@@ -1,9 +1,11 @@
 import s from './style.module.css';
+import SearchLayer from '../Search-layer/Search-layer'
 
 const DoneArchive = function (props) {
 
    return (
       <div>
+         <SearchLayer />
          <h1 className={s.title}>{props.title}</h1>
          <div className={s.wrap}>
 
