@@ -1,0 +1,77 @@
+.item {
+  padding: 16px 18px;
+  background-color: #fff;
+  border: 1px solid #1ca8f8;
+  border-radius: 4px;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: 40px 1fr 100px 62px 40px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+  position: relative;
+}
+.item:hover {
+  opacity: 1;
+}
+.item + .item {
+  margin-top: 30px;
+}
+.item_name {
+  color: #03023c;
+  font-size: 20px;
+  font-family: "PT Serif", serif;
+  padding: 0 24px;
+  line-height: 40px;
+}
+.item_date {
+  color: #03023c;
+  font-size: 18px;
+  font-family: "PT Serif", serif;
+}
+.option {
+  display: block;
+  margin-bottom: 0.25em;
+  user-select: none;
+}
+.check_input {
+  /* Скрываем для Chrome и Firefox */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  /* Скрываем для Egde */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+.check_box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 0.1em #4a90e2;
+  margin-left: 0;
+  margin-top: 0;
+  background-color: #f2fcff;
+  border-radius: 50%;
+}
+.check_input:checked + .check_box {
+  background-color: #fbfdff;
+  background-image: url("../../img/check.svg");
+}
+
+/* Focused */
+.check_input:focus + .check_box {
+  box-shadow: 0 0 0 0.1em #4a90e2, 0 0 0 0.2em #4a90e2;
+}
+
+/* Disabled */
+.check-input:disabled + .check_box {
+  box-shadow: 0 0 0 0.1em #9b9b9b;
+}
+
+/* Checked and focused */
+.check-input:checked:disabled + .check_box {
+  background-color: #9b9b9b;
+}

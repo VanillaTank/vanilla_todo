@@ -14,6 +14,7 @@ const SearchLayer = function () {
 
             <input className={s.input} type="text" placeholder='Название проекта' />
           </div>
+          {/* по дедлайну и сделано/не сделано */}
           <button className={s.btn}>ОТСОРТИРОВАТЬ</button>
           <Link to="/create-project">
             <button className={s.btn}>ДОБАВИТЬ ПРОЕКТ</button>

@@ -5,3 +5,14 @@
   border-bottom: 1px solid #1ca8f8;
   min-height: 80%;
 }
+.actualProjectsTemplate {
+  margin: 0 auto;
+  max-width: 970px;
+  display: grid;
+  grid-gap: 29px 85px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.actualProjects {
+  margin-bottom: 94px;
+}

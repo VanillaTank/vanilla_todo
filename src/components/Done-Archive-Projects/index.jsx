@@ -1,58 +1,31 @@
 import s from './style.module.css';
 import SearchLayer from '../Search-layer/Search-layer'
+import CommonCard from '../CommonCard/CommonCard';
+import { getRandomString } from '../../utils.js';
 
-const DoneArchive = function (props) {
+const DoneArchive = function ({ data, title }) {
 
    return (
-      <div>
+      <div className={s.doneArchive}>
          <SearchLayer />
-         <h1 className={s.title}>{props.title}</h1>
+         <h1 className={s.title}>{title}</h1>
          <div className={s.wrap}>
 
 
             <div className="container">
-               {//убрать в отдельный компонент, рендерить в мапе
-               }
-               <div className={s.item}>
-                  <label className={s.option}>
-                     <input className={s.check_input} type="checkbox" id="" checked />
-                     <span className={s.check_box}></span>
-                  </label>
-                  <span className={s.item_name}>Название нашего очень большого дела</span>
-                  <span className={s.item_date}>01.06.21</span>
-                  <button className='btn_edit'>!!!</button>
-                  <button className='btn_del'>X</button>
-               </div>
-
-
-               <div className={s.item}>
-                  <label className={s.option}>
-                     <input className={s.check_input} type="checkbox" id="" checked />
-                     <span className={s.check_box}></span>
-                  </label>
-                  <span className={s.item_name}>Название нашего очень большого дела</span>
-                  <span className={s.item_date}>01.06.21</span>
-                  <button className='btn_edit'>!!!</button>
-                  <button className='btn_del'>X</button>
-               </div>
-
-
-               <div className={s.item}>
-                  <label className={s.option}>
-                     <input className={s.check_input} type="checkbox" id="" checked />
-                     <span className={s.check_box}></span>
-                  </label>
-                  <span className={s.item_name}>Название нашего очень большого дела</span>
-                  <span className={s.item_date}>01.06.21</span>
-                  <button className='btn_edit'>!!!</button>
-                  <button className='btn_del'>X</button>
-               </div>
+               {iterateDataAndCreateCards(data)}
             </div>
 
 
          </div>
       </div>
    )
+};
+
+function iterateDataAndCreateCards(data) {
+   return data.map(el => {
+      return <CommonCard cardData={el} key={getRandomString(5)} />
+   })
 }
 
 export default DoneArchive;
