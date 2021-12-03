@@ -18,8 +18,7 @@ const data = [
   {
     projectName: "Написать приложение на реакте.",
     deadline: "17.03.2021",
-    comment:
-      "Когда допишу этот проект, гештальтов станет на один меньше, а практики - немного больше.",
+    comment: "",
     isActual: true,
     isDone: false,
     isArchive: false,
@@ -85,7 +84,7 @@ const data = [
     comment:
       "Когда допишу этот проект, гештальтов станет на один меньше, а практики - немного больше.",
     isActual: false,
-    isDone: false,
+    isDone: true,
     isArchive: true,
     tasks: [
       {

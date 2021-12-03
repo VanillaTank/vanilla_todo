@@ -11,6 +11,7 @@ const Header = () => {
 
                 <div>
                     <ul className={s.nav_list}>
+                        <li className={s.nav_list__item}><Link to="/projjj">ПРОЕКТ</Link></li>
                         <li className={s.nav_list__item}><Link to="/">АКТУАЛЬНЫЕ</Link></li>
                         <li className={s.nav_list__item}><Link to="/done">ВЫПОЛНЕННЫЕ</Link></li>
                         <li className={s.nav_list__item}><Link to="/archieve">АРХИВ</Link></li>
