@@ -27,6 +27,22 @@ const data = [
         taskName: "Посмотреть видео на ютубе",
         isTaskDone: false,
       },
+      {
+        taskName: "В небе ангелочки",
+        isTaskDone: true,
+      },
+      {
+        taskName: "Нюхают цветочки",
+        isTaskDone: false,
+      },
+      {
+        taskName: "джинг белс, джингл белс",
+        isTaskDone: false,
+      },
+      {
+        taskName: "Прощай, Норфорл! За честь короны мы умрем.",
+        isTaskDone: false,
+      },
     ],
   },
 

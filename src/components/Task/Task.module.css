@@ -1,0 +1,64 @@
+.task_wrap {
+  border: 1px solid #1ca8f8;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5px 7px 5px 15px;
+  box-shadow: 1px 2px 3px rgba(7, 97, 180, 0.4);
+  display: grid;
+  grid-template-columns: 1fr 55px 20px;
+  align-items: center;
+}
+.task_label {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "PT Serif", serif;
+  position: relative;
+  margin-left: 60px;
+  cursor: pointer;
+}
+
+.check_input {
+  /* Скрываем для Chrome и Firefox */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  /* Скрываем для Egde */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+.check_box {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 0.1em #4a90e2;
+  margin-left: -52px;
+  margin-top: -8px;
+  background-color: #f2fcff;
+  border-radius: 50%;
+}
+.check_input:checked + .check_box {
+  background-color: #fbfdff;
+  background-image: url("../../img/check.svg");
+}
+
+/* Focused */
+.check_input:focus + .check_box {
+  box-shadow: 0 0 0 0.1em #4a90e2, 0 0 0 0.2em #4a90e2;
+}
+
+/* Disabled */
+.check-input:disabled + .check_box {
+  box-shadow: 0 0 0 0.1em #9b9b9b;
+}
+
+/* Checked and focused */
+.check-input:checked:disabled + .check_box {
+  background-color: #9b9b9b;
+}
+
+.btn_del {
+  align-self: flex-start;
+}

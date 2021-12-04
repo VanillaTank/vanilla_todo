@@ -9,25 +9,25 @@ const OpenProject = ({ data }) => {
   return (
     <div className={s.OpenProject}>
       <div className={s.header + ' container'}>
-        <h1 className='title'>{data.projectName}</h1>
+        <h1 className={s.title}>{data.projectName}</h1>
 
 
         <span className={s.btn_description}>Описание</span>
-        <div className={s.body_description}>
+        {/* <div className={s.body_description}>
 
           {data.comment ? data.comment : <NoComment />}
 
-        </div>
+        </div> */}
 
-        <div>
-          Дедлайн{data.deadline ? `: ${data.deadline}` : ' не установлен'}
+        <div className={s.deadline}>
+          <span>Дедлайн</span>{data.deadline ? `: ${data.deadline}` : ' не установлен'}
         </div>
 
       </div>
 
-      <div>
-        <div className='container'>
-          <button className={s.btn_add_task}>Добавить задачу</button>
+      <div className={s.background}>
+        <div className={s.taskWrap + ' container'} >
+          <button className={s.btn_add_task + ' btn'}>Добавить задачу</button>
 
           {generateList(data.tasks)}
 
